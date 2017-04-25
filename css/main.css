@@ -92,12 +92,22 @@ h3 {
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-size:22px;   
-    padding-bottom:30px;
     color:#000000;
     font-size:15px;
     line-height:25px;
 }
 
+
+
+h5 {
+        font-family: 'Playfair Display', serif;
+        font-size:25px;
+        text-align: center;
+        font-style: italic;
+        vertical-align: middle;
+        padding-top:320px;
+
+}
 
 p {
     font-family: 'Open Sans', sans-serif;
