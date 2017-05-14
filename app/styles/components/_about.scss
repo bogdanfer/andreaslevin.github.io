@@ -1,0 +1,116 @@
+.andlev {
+	&__about {
+		display: block;
+		width: calc(100vw - 60px);
+		margin: 0 30px;
+
+		@media (min-width: $breakpoint-mobile) {
+			width: calc(100vw - 120px);
+			margin: 0 60px;
+		}
+
+		h1,
+		h3 {
+			display: block;
+			margin: 0;
+			padding: 0;
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			line-height: 50px;
+		}
+		
+		h1 {
+	    font-size: 40px;
+	    color: $color-dark;
+		}
+
+		h3 {
+		  font-style: italic;
+		  font-size: 20px;
+		  color: $color-grey1;
+		}	
+	}
+
+	&__profile {
+		display: block;
+		margin: 50px 0 0;
+
+		&-section {
+			display: block;
+			margin-bottom: 50px; 
+
+			h2 {
+				position: relative;
+				display: inline-block;
+				margin: 0 0 45px;
+				padding: 0 0 15px;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 16px;
+				line-height: 25px;
+				color: $color-dark;
+
+				&::after {
+					position: absolute;
+					bottom: 0;
+					display: block;
+					height: 1px; 
+					width: 30px;
+					background: $color-dark;
+					content: '';
+				}
+			}
+
+			p {
+				display: block;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				line-height: 20px;
+				color: $color-grey1;
+			}
+
+			ul {
+				li {
+					display: block;
+					margin-bottom: 30px;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 14px;
+					line-height: 20px;
+					color: $color-grey1;
+
+					span {
+						display: block;
+						color: $color-dark;
+					}
+				}
+			}
+		}
+	}
+}
+
+.andlev__footer {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+
+	&-social {
+		ul {
+			display: flex;
+		}
+
+		li {
+			margin-right: 18px;
+
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+
+		&-icon {
+			display: block;
+			width: 16px;
+			height: 15px;
+		}
+	}
+
+
+}

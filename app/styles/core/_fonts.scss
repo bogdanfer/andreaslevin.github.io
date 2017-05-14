@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Gill Sans Std';
+    src: url('#{$font-path}subset-GillSansStd.eot');
+    src: url('#{$font-path}subset-GillSansStd.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}subset-GillSansStd.woff') format('woff'),
+    url('#{$font-path}subset-GillSansStd.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'caslon_540regular';
+    src: url('#{$font-path}/caslon/caslon-webfont.woff2') format('woff2'),
+      url('#{$font-path}/caslon/caslon-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'caslon_540italic';
+    src: url('#{$font-path}/caslon/caslonitalic-webfont.woff2') format('woff2'),
+      url('#{$font-path}/caslon/caslonitalic-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GillSansLight';
+    src: url('#{$font-path}GILLSL__.eot');
+    src: url('#{$font-path}GILLSL__.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}GILLSL__.woff') format('woff'),
+    url('#{$font-path}GILLSL__.ttf') format('truetype');
+}

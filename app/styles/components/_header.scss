@@ -1,0 +1,30 @@
+.nav {  
+  display: flex;
+  justify-content: space-between; 
+  margin: 30px 0 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+
+  ul {
+    display: block;
+  }
+
+  ul + ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+	.about-on {
+		display: none;
+	}
+
+  @media (min-width: $breakpoint-mobile) {
+  	margin: 55px 0 125px;
+  	font-size:15px;
+
+  	.about-on {
+			display: inline-block;
+      margin-left: 40px;
+		}
+  } 
+}
