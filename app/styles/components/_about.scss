@@ -4,11 +4,6 @@
 		width: calc(100vw - 60px);
 		margin: 0 30px;
 
-		@media (min-width: $breakpoint-mobile) {
-			width: calc(100vw - 120px);
-			margin: 0 60px;
-		}
-
 		h1,
 		h3 {
 			display: block;
@@ -29,11 +24,36 @@
 		  font-size: 20px;
 		  color: $color-grey1;
 		}	
+
+		@media (min-width: $breakpoint-mobile) {
+			width: calc(100vw - 80px);
+			max-width: 690px;
+			margin: 0 auto;
+		}
+		
+		@media (min-width: $breakpoint-tablet) {
+			width: calc(100vw - 120px);
+			max-width: 1320px;
+			margin: 0 auto;
+
+			h1 {
+				font-size: 50px;
+			}
+
+			h3 {
+				margin-top: 10px;
+				font-size: 25px;
+			}
+		}
 	}
 
 	&__profile {
 		display: block;
 		margin: 50px 0 0;
+
+		@media (min-width: $breakpoint-mobile) {
+			margin-left: 56px;
+		}
 
 		&-section {
 			display: block;
@@ -81,6 +101,82 @@
 						display: block;
 						color: $color-dark;
 					}
+				}
+			}
+
+			&-edulist {
+				&-ditem {
+					display: none;
+					margin: 80px 0 0;
+					font-family: 'Open Sans', sans-serif;
+					font-size: 12px;
+					font-style: italic;
+					color: $color-dark;
+
+					a {
+						color: $color-grey2;
+						text-decoration: none;
+					}
+
+				}
+			}
+
+			@media (min-width: $breakpoint-mobile) {
+				display: flex;
+				margin-bottom: 70px;
+
+				h2 {
+					height: 45px;
+					margin-right: 100px;
+				}
+
+				p {
+					max-width: 340px;
+				}
+
+				ul li {
+					margin-bottom: 50px;
+				}
+
+				&-xplist {
+					margin-left: -35px;
+				}
+
+				&-edulist {
+					margin-left: -26px;
+
+					&-ditem {
+						display: block;
+					}
+				}
+			}
+
+			@media (min-width: $breakpoint-tablet) {
+				h2 {
+					margin-right: 164px;
+					font-size: 22px;
+
+					&::after {
+						width: 60px;
+					}
+				}
+
+				p {
+					width: 45vw;
+					max-width: 650px;
+					font-size: 15px;
+				}
+
+				ul li {
+					font-size: 15px;
+				}
+
+				&-xplist {
+					margin-left: -47px;
+				}
+
+				&-edulist {
+					margin-left: -35px;
 				}
 			}
 		}
