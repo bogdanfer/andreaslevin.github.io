@@ -1,0 +1,126 @@
+.andlev {
+	&__home {
+		&-top {
+			display: block;
+			width: calc(100% - 60px);
+			margin: 0 30px 70px;
+		}
+
+		h1,
+		h3 {
+			display: block;
+			margin: 0;
+			padding: 0;
+			font-family: 'Playfair Display', serif;
+			font-weight: 400;
+			line-height: 50px;
+		}
+		
+		h1 {
+	    font-size: 36px;
+	    letter-spacing: -0.8px;
+	    color: $color-dark;
+		}
+
+		h3 {
+		  font-style: italic;
+		  font-size: 20px;
+		  color: $color-grey1;
+		}	
+
+		@media (min-width: $breakpoint-mobile) {
+			&-top {
+				width: calc(100% - 80px);
+				margin: 0 40px 70px;
+			}
+		}
+		
+		@media (min-width: $breakpoint-tablet) {
+			&-top {
+				width: calc(100% - 120px);
+				max-width: 1320px;
+				margin: 0 auto 70px;
+			}
+
+			h1 {
+				font-size: 50px;
+			}
+
+			h3 {
+				margin-top: 10px;
+				font-size: 25px;
+			}
+		}
+
+		.row {
+			display: block;
+			margin-bottom: 15px;
+
+			@media (min-width: $breakpoint-mobile) {
+				width: calc(100% - 80px);
+				max-width: 1320px;
+				margin: 0 40px 15px;
+			}
+
+			@media (min-width: $breakpoint-tablet) {
+				width: calc(100% - 120px);
+				margin: 0 auto 15px;
+			}
+
+			&--half {
+				display: block;
+
+				@media (min-width: $breakpoint-mobile) {
+					display: flex;
+
+					.grid {
+						display: block;
+						width: 50%;
+
+						&:first-of-type {
+							margin-right: 15px;
+						}
+					}
+				}
+			}
+
+			&--three {
+				.grid {
+					margin-bottom: 15px;
+				}
+
+				@media (min-width: $breakpoint-mobile) {
+					display: flex;
+
+					.grid {
+						margin-bottom: 0;
+					}
+
+					.grid-holder + .grid,
+					.grid + .grid-holder {
+						margin-left: 15px;
+					}
+
+					.grid-holder {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+
+						> .grid:first-of-type {
+							margin-bottom: 15px;
+						}
+
+						> .grid:last-of-type {
+							margin: 0;
+						}
+					}
+
+					img {
+						object-fit: cover;
+					}
+
+				}
+			}
+		}
+	}
+}
