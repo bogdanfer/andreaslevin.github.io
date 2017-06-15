@@ -4,9 +4,9 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
     <script src="scripts/picturefill.js" type="text/javascript"></script>
     <title>Portfolio of Andreas levin - About</title>
@@ -89,15 +89,14 @@
     </g>
 </symbol></svg><!-- endinject --></div>
 
-<div id="wrapper" class="andlev__about">
+<div id="wrapper" class="andlev__about andlev__container">
   <header>
     <div class="nav">
       <ul>
-        <li class="name">Andreas Levin</li>
+        <li class="name"><a href="home.html">Andreas Levin</a></li>
       </ul>
       <ul>
-        <li class="portfolio-off"><a href="index.html">Portfolio</a></li>
-        <li class="about-on"><a href="about.html">About</a></li>
+        <li class="portfolio-on"><a href="home.html">Portfolio</a></li>
       </ul>
     </div>  
   </header>
@@ -107,17 +106,19 @@
     <h3>I'm a maker of all things</h3>
   </div>
 
-  <div class="grid-container outline">
+  <div class="grid-container outline andlev__gridspacer">
     <!-- img -->
     <div class="row">
-      <div class="grid cs-style-3 col-12 animated_project-grid fadeInUp">
-        <div data-picture="">
-          <div data-src="images/About/Profile-S.jpg"></div>
-          <div data-src="images/About/Profile-M.jpg" data-media="(min-width: 480px)"></div>
-          <div data-src="images/About/Profile-L.jpg" data-media="(min-width: 768px)"></div>
-        </div>
+      <div class="grid animated_project-grid fadeInUp andlev__about-heroimg">
+        <!-- picture element with different img sources -->
+        <picture>
+          <!-- replace src value with actual img URL (format): images/Folder-Name/File-Name.jpg -->
+          <source srcset="https://www.fillmurray.com/1320/700" media="(min-width: 1024px)">
+          <source srcset="https://www.fillmurray.com/688/365" media="(min-width: 768px)">
+          <img srcset="https://www.fillmurray.com/375/275" alt="">
+        </picture>
       </div>
-    </div> 
+    </div>
 
     <!-- section -->
     <div class="row">
@@ -139,7 +140,7 @@
             </ul>
           </div>
 
-          <div class="andlev__profile-section">
+          <div class="andlev__profile-section andlev__profile-section--nomargin">
             <h2>Education</h2>
             <ul class="andlev__profile-section-edulist">
               <li><span>Hyper Island</span>Digital Media Programme Stockholm</li>
@@ -150,45 +151,48 @@
               </li>
             </ul>
           </div>
+          
+          <!-- footer -->
+          <div class="andlev__footer">
+            <div class="andlev__footer-social">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/andreas.levin.39">
+                    <svg aria-hidden="true" class="andlev__footer-social-icon">
+                        <use xlink:href="#Facebook"></use>
+                    </svg> 
+                  </a>
+                </li>
+                  <li>
+                    <a href="https://uk.linkedin.com/in/andreaslevin">
+                      <svg aria-hidden="true" class="andlev__footer-social-icon">
+                        <use xlink:href="#Linkedin"></use>
+                    </svg> 
+                    </a>
+                  </li>
+                  <li>
+                    <svg aria-hidden="true" class="andlev__footer-social-icon">
+                        <use xlink:href="#Pinterest"></use>
+                    </svg> 
+                  </li>
+                  <li>
+                    <a href="mailto:andreas.levin@gmail.com?Subject=Hello" target="_top">
+                      <svg aria-hidden="true" class="andlev__footer-social-icon">
+                        <use xlink:href="#Email"></use>
+                    </svg> 
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
     <!-- /section -->
-
-    <div class="andlev__footer">
-      <div class="andlev__footer-social">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/andreas.levin.39">
-              <svg aria-hidden="true" class="andlev__footer-social-icon">
-                  <use xlink:href="#Facebook"></use>
-              </svg> 
-            </a>
-          </li>
-            <li>
-              <a href="https://uk.linkedin.com/in/andreaslevin">
-                <svg aria-hidden="true" class="andlev__footer-social-icon">
-                  <use xlink:href="#Linkedin"></use>
-              </svg> 
-              </a>
-            </li>
-            <li>
-              <svg aria-hidden="true" class="andlev__footer-social-icon">
-                  <use xlink:href="#Pinterest"></use>
-              </svg> 
-            </li>
-            <li>
-              <a href="mailto:andreas.levin@gmail.com?Subject=Hello" target="_top">
-                <svg aria-hidden="true" class="andlev__footer-social-icon">
-                  <use xlink:href="#Email"></use>
-              </svg> 
-              </a>
-            </li>
-        </ul>
-      </div>
-    </div>
+    
   </div>
-
 </div>
+<!-- /wrapper -->
 </body>
 </html>

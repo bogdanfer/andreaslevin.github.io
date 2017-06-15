@@ -1,68 +1,36 @@
 .andlev {
 	&__about {
-		display: block;
-		width: calc(100vw - 60px);
-		margin: 0 30px;
-
-		h1,
-		h3 {
-			display: block;
-			margin: 0;
-			padding: 0;
-			font-family: 'Playfair Display', serif;
-			font-weight: 400;
-			line-height: 50px;
-		}
-		
-		h1 {
-	    font-size: 40px;
-	    color: $color-dark;
-		}
-
-		h3 {
-		  font-style: italic;
-		  font-size: 20px;
-		  color: $color-grey1;
-		}	
-
-		@media (min-width: $breakpoint-mobile) {
-			width: calc(100vw - 80px);
-			max-width: 690px;
-			margin: 0 auto;
-		}
-		
-		@media (min-width: $breakpoint-tablet) {
-			width: calc(100vw - 120px);
-			max-width: 1320px;
-			margin: 0 auto;
-
-			h1 {
-				font-size: 50px;
-			}
-
-			h3 {
-				margin-top: 10px;
-				font-size: 25px;
+		.andlev__gridspacer {
+			@media (max-width: $breakpoint-mobile) {
+				margin-top: 88px;
 			}
 		}
 	}
 
 	&__profile {
 		display: block;
-		margin: 50px 0 0;
+		margin: 83px 0 0;
 
 		@media (min-width: $breakpoint-mobile) {
-			margin-left: 56px;
+			margin: 76px 0 0 56px;
+		}
+
+		@media (min-width: $breakpoint-tablet) {
+			margin: 134px 0 0 109px;
 		}
 
 		&-section {
 			display: block;
-			margin-bottom: 50px; 
+			margin-bottom: 52px; 
+
+			&--nomargin {
+				margin-bottom: 0;
+			}
 
 			h2 {
 				position: relative;
 				display: inline-block;
-				margin: 0 0 45px;
+				margin: 0 0 25px;
 				padding: 0 0 15px;
 				font-family: 'Open Sans', sans-serif;
 				font-size: 16px;
@@ -73,7 +41,7 @@
 					position: absolute;
 					bottom: 0;
 					display: block;
-					height: 1px; 
+					height: 2px; 
 					width: 30px;
 					background: $color-dark;
 					content: '';
@@ -89,13 +57,17 @@
 			}
 
 			ul {
+				display: block;
+
 				li {
 					display: block;
-					margin-bottom: 30px;
+					margin-bottom: 25px;
+					padding-bottom: 15px;
 					font-family: 'Open Sans', sans-serif;
 					font-size: 14px;
 					line-height: 20px;
 					color: $color-grey1;
+					border-bottom: 1px solid rgba(0,0,0,0.1);
 
 					span {
 						display: block;
@@ -107,11 +79,13 @@
 			&-edulist {
 				&-ditem {
 					display: none;
-					margin: 80px 0 0;
+					margin: 52px 0 0 0 !important;
+					padding: 0 !important;
 					font-family: 'Open Sans', sans-serif;
 					font-size: 12px;
 					font-style: italic;
 					color: $color-dark;
+					border-bottom: 0 !important;
 
 					a {
 						color: $color-grey2;
@@ -126,20 +100,31 @@
 				margin-bottom: 70px;
 
 				h2 {
+					font-size: 14px;
 					height: 45px;
 					margin-right: 100px;
 				}
 
 				p {
+					font-size: 12px;
 					max-width: 340px;
 				}
 
-				ul li {
-					margin-bottom: 50px;
+				ul {
+					max-width: 340px;
+
+					li {
+						margin-bottom: 35px;
+						padding-bottom: 15px;
+					}
 				}
 
 				&-xplist {
 					margin-left: -35px;
+
+					li:last-of-type {
+						margin-bottom: 0;
+					}
 				}
 
 				&-edulist {
@@ -147,11 +132,14 @@
 
 					&-ditem {
 						display: block;
+						margin: 76px 0 0 0 !important;
 					}
 				}
 			}
 
 			@media (min-width: $breakpoint-tablet) {
+				margin-bottom: 132px;
+
 				h2 {
 					margin-right: 164px;
 					font-size: 22px;
@@ -167,8 +155,13 @@
 					font-size: 15px;
 				}
 
-				ul li {
-					font-size: 15px;
+				ul {
+					width: 45vw;
+					max-width: 650px;
+
+					li {
+						font-size: 15px;
+					}
 				}
 
 				&-xplist {
@@ -177,36 +170,14 @@
 
 				&-edulist {
 					margin-left: -35px;
+
+					&-ditem {
+						display: block;
+						margin: 134px 0 0!important;
+					}
 				}
 			}
 		}
 	}
 }
 
-.andlev__footer {
-	display: block;
-	width: 100%;
-	margin-bottom: 30px;
-
-	&-social {
-		ul {
-			display: flex;
-		}
-
-		li {
-			margin-right: 18px;
-
-			&:last-of-type {
-				margin: 0;
-			}
-		}
-
-		&-icon {
-			display: block;
-			width: 16px;
-			height: 15px;
-		}
-	}
-
-
-}

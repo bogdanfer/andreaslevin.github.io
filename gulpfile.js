@@ -35,7 +35,7 @@ gulp.task('svgstore', function() {
   }
 
   return gulp
-    .src(['app/about.html', 'app/home.html'])
+    .src('app/*.html')
     .pipe(inject(svgs, { transform: fileContents }))
     .pipe(gulp.dest('app/'));
 });
@@ -111,7 +111,7 @@ gulp.task('serve', ['build'], () => {
     open: true
   });
 
-  gulp.watch('app/*.html', ['html', reload]);
+  gulp.watch(['app/*.html', 'app/work/*.html'], ['html', reload]);
   gulp.watch('app/styles/**/*', ['styles', reload]);
   gulp.watch('app/scripts/**/*', ['scripts', reload]);
   gulp.watch('app/images/**/*', ['images', reload]);

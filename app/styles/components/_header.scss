@@ -1,7 +1,7 @@
 .nav {  
   display: flex;
   justify-content: space-between; 
-  margin: 30px 0 80px;
+  margin: 30px 0 77px;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
 
@@ -18,17 +18,37 @@
     justify-content: space-between;
   }
 
+  .portfolio-off {
+    display: none;
+  }
+
 	.about-on {
-		display: none;
+		display: inline-block;
 	}
 
+  .about-off {
+    display: none;
+  }
+
+  .name {
+    font-weight: 600;
+  }
+
   @media (min-width: $breakpoint-mobile) {
-  	margin: 55px 0 125px;
+  	margin: 55px 0 65px;
   	font-size:15px;
 
+    .about-off {
+      display: inline-block;
+      margin-left: 40px;
+    }
+
   	.about-on {
-			display: inline-block;
       margin-left: 40px;
 		}
-  } 
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 55px 0 125px;
+  }
 }
