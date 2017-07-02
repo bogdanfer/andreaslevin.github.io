@@ -96,41 +96,49 @@
         <li class="name"><a href="home.html">Andreas Levin</a></li>
       </ul>
       <ul>
-        <li class="portfolio-on"><a href="home.html">Portfolio</a></li>
+        <li class="portfolio-on"><a href="home.html" class="link--nonactive">Portfolio</a></li>
+        <li class="about-on"><a href="about.html" class="link--active">About</a></li>
       </ul>
     </div>  
   </header>
 
+  <!-- Header -->
   <div class="animated_intro fadeInUp">
     <h1>About</h1>
     <h3>I'm a maker of all things</h3>
   </div>
 
+  <!-- About Content -->
   <div class="grid-container outline andlev__gridspacer">
-    <!-- img -->
+    <!-- About Image -->
     <div class="row">
       <div class="grid animated_project-grid fadeInUp andlev__about-heroimg">
-        <!-- picture element with different img sources -->
+
         <picture>
           <!-- replace src value with actual img URL (format): images/Folder-Name/File-Name.jpg -->
           <source srcset="https://www.fillmurray.com/1320/700" media="(min-width: 1024px)">
           <source srcset="https://www.fillmurray.com/688/365" media="(min-width: 768px)">
           <img srcset="https://www.fillmurray.com/375/275" alt="">
         </picture>
+
       </div>
     </div>
 
-    <!-- section -->
+    <!-- About Section -->
     <div class="row">
       <div class="grid cs-style-3 col-12 animated_project-grid fadeInUp">
         <div class="andlev__profile">
+
+          <!-- About Profile section -->
           <div class="andlev__profile-section">
             <h2>Profile</h2>
             <p>Born in Sweden, I ventured to London in my early twenties to work at AKQA as my first step into advertising. With four years of agency experience of working on mainly Nike, I moved to Amsterdam to broaden my experience. I've since then had the chance to build upon my graphic design knowledge by defining art direction, shaping user epxeriences and leading smaller teams. <br /><br />Most recently, I've designed and developed the new KLM Kiosk app, as well as art directed and lead the design of two major bicycle sites.</p>
           </div>
 
+          <!-- About Experience section -->
           <div class="andlev__profile-section">
             <h2>Experience</h2>
+            
             <ul class="andlev__profile-section-xplist">
               <li><span>AKQA Amsterdam</span>Senior Designer, 2009-2013</li>
               <li><span>AKQA London</span>Senior Designer, 2009-2013</li>
@@ -140,8 +148,10 @@
             </ul>
           </div>
 
+          <!-- About Education section -->
           <div class="andlev__profile-section andlev__profile-section--nomargin">
             <h2>Education</h2>
+
             <ul class="andlev__profile-section-edulist">
               <li><span>Hyper Island</span>Digital Media Programme Stockholm</li>
               <li><span>Roden Gymnasiet</span>Technical Programme Stockholm</li>
@@ -151,42 +161,43 @@
               </li>
             </ul>
           </div>
-          
-          <!-- footer -->
-          <div class="andlev__footer">
-            <div class="andlev__footer-social">
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/andreas.levin.39">
-                    <svg aria-hidden="true" class="andlev__footer-social-icon">
-                        <use xlink:href="#Facebook"></use>
-                    </svg> 
-                  </a>
-                </li>
-                  <li>
-                    <a href="https://uk.linkedin.com/in/andreaslevin">
-                      <svg aria-hidden="true" class="andlev__footer-social-icon">
-                        <use xlink:href="#Linkedin"></use>
-                    </svg> 
-                    </a>
-                  </li>
-                  <li>
-                    <svg aria-hidden="true" class="andlev__footer-social-icon">
-                        <use xlink:href="#Pinterest"></use>
-                    </svg> 
-                  </li>
-                  <li>
-                    <a href="mailto:andreas.levin@gmail.com?Subject=Hello" target="_top">
-                      <svg aria-hidden="true" class="andlev__footer-social-icon">
-                        <use xlink:href="#Email"></use>
-                    </svg> 
-                    </a>
-                  </li>
-              </ul>
-            </div>
-          </div>
 
         </div>
+
+        <!-- Global Footer with social media links list -->
+        <div class="andlev__footer">
+          <div class="andlev__footer-social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/andreas.levin.39">
+                  <svg aria-hidden="true" class="andlev__footer-social-icon">
+                      <use xlink:href="#Facebook"></use>
+                  </svg> 
+                </a>
+              </li>
+              <li>
+                <a href="https://uk.linkedin.com/in/andreaslevin">
+                  <svg aria-hidden="true" class="andlev__footer-social-icon">
+                    <use xlink:href="#Linkedin"></use>
+                </svg> 
+                </a>
+              </li>
+              <li>
+                <svg aria-hidden="true" class="andlev__footer-social-icon">
+                    <use xlink:href="#Pinterest"></use>
+                </svg> 
+              </li>
+              <li>
+                <a href="mailto:andreas.levin@gmail.com?Subject=Hello" target="_top">
+                  <svg aria-hidden="true" class="andlev__footer-social-icon">
+                    <use xlink:href="#Email"></use>
+                </svg> 
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- /section -->

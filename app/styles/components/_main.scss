@@ -75,6 +75,10 @@ img {
 /* Typography */
 a {
   color: $color-dark;
+
+  &.link--nonactive {
+    opacity: .2;
+  }
 }
 
 h1,
@@ -98,7 +102,7 @@ h1 {
 }
 
 h3 {
-  margin-top: 12px;
+  margin-top: 18px;
   font-style: italic;
   font-size: 20px;
   color: $color-grey1;
@@ -125,7 +129,7 @@ h3 {
   }
 
   h3 {
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 25px;
   }
 }

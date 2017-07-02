@@ -5,6 +5,10 @@
 				margin-top: 88px;
 			}
 		}
+
+		.andlev__footer {
+			margin-top: 0 !important;
+		}
 	}
 
 	&__profile {
@@ -52,8 +56,12 @@
 				display: block;
 				font-family: 'Open Sans', sans-serif;
 				font-size: 14px;
-				line-height: 20px;
+				line-height: 18px;
 				color: $color-grey1;
+
+				@media (min-width: $breakpoint-mobile) {
+					line-height: 20px;
+				}
 			}
 
 			ul {
@@ -68,6 +76,14 @@
 					line-height: 20px;
 					color: $color-grey1;
 					border-bottom: 1px solid rgba(0,0,0,0.1);
+
+					@media (min-width: $breakpoint-mobile) {
+						font-size: 12px;
+					}
+
+					@media (min-width: $breakpoint-tablet) {
+						font-size: 15px;
+					}
 
 					span {
 						display: block;
