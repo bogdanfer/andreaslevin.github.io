@@ -60,9 +60,9 @@ gulp.task('scripts', () => {
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.browserify())
-    .pipe($.babel({compact: true}))
-    .pipe($.uglify())
-    .pipe($.sourcemaps.write('.'))
+    // .pipe($.babel({compact: true}))
+    // .pipe($.uglify())
+    // .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('dist/scripts'));
 });
 
@@ -92,8 +92,8 @@ gulp.task('jshint', function() {
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
     .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true,
+      // progressive: true,
+      // interlaced: true,
       svgoPlugins: [{cleanupIDs: false}]
     })))
     .pipe(gulp.dest('dist/images'));

@@ -52,7 +52,9 @@
   },
   "dependencies": {
     "imports-loader": "^0.7.1",
-    "jquery": "1.11",
-    "pubsub-js": "^1.5.3"
+    "jquery": "^1.11.3",
+    "pubsub-js": "^1.5.3",
+    "scroll-parallax": "^2.0.0",
+    "scrollmonitor-parallax": "^1.1.0"
   }
 }

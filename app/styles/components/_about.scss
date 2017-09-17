@@ -1,5 +1,15 @@
 .andlev {
 	&__about {
+		@media (max-width: $breakpoint-mobile) {
+      .about-on {
+        display: none;
+      }
+
+      .portfolio-on {
+        display: block;
+      } 
+    }
+
 		.andlev__gridspacer {
 			@media (max-width: $breakpoint-mobile) {
 				margin-top: 88px;
@@ -28,7 +38,11 @@
 			margin-bottom: 52px; 
 
 			&--nomargin {
-				margin-bottom: 0;
+				margin-bottom: 52px;
+
+				@media (min-width: $breakpoint-mobile) {
+					margin-bottom: 0;
+				}
 			}
 
 			h2 {
@@ -117,7 +131,8 @@
 
 				h2 {
 					font-size: 14px;
-					height: 45px;
+					line-height: 17px;
+					height: 32px;
 					margin-right: 100px;
 				}
 
@@ -128,6 +143,7 @@
 
 				ul {
 					max-width: 340px;
+					width: 100%;
 
 					li {
 						margin-bottom: 35px;
@@ -157,6 +173,7 @@
 				margin-bottom: 132px;
 
 				h2 {
+					height: 45px;
 					margin-right: 164px;
 					font-size: 22px;
 

@@ -77,7 +77,11 @@ a {
   color: $color-dark;
 
   &.link--nonactive {
-    opacity: .2;
+    opacity: 1;
+
+    @media (min-width: $breakpoint-mobile) {
+      opacity: .2;
+    }
   }
 }
 
@@ -95,10 +99,10 @@ h1 {
   letter-spacing: -0.8px;
   color: $color-dark;
 
-  span::after {
+  /*span::after {
     display: inline-block;
     content: '&';
-  }
+  }*/
 }
 
 h3 {
@@ -112,10 +116,10 @@ h3 {
   h1 {
     font-size: 40px;
 
-    span::after {
+    /*span::after {
       display: inline-block;
       content: 'and';
-    }
+    }*/
   }
 
   h3 {
@@ -360,7 +364,7 @@ span.text-content {
   
   @media (min-width: $breakpoint-tablet) {
     width: calc(100% - 120px);
-    max-width: 1320px;
+    max-width: 1920px;
     margin: 0 auto;
     
     .andlev__about-heroimg {
@@ -434,16 +438,38 @@ span.text-content {
     align-items: center;
 
     span {
+      flex-grow: 2;
       font-family: 'Open Sans', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       line-height: 25px;
+
+      @media (min-width: $breakpoint-mobile) {
+        font-size: 12px;
+      }
+
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 15px;
+      }
     }
 
     a {
+      margin-left: 10px;
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       color: $color-grey2;
+
+      + a {
+        display: none;
+      }
+
+      @media (min-width: $breakpoint-mobile) {
+        margin-left: 20px;
+
+        + a {
+          display: block;
+        }
+      }
     }
 
     @media (min-width: $breakpoint-tablet) {
